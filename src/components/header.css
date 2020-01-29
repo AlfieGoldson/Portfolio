@@ -1,13 +1,59 @@
 header {
   height: 100vh;
   /* flex-box thing */
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-img.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-position: center;
+  background-position-y: 60%;
   margin-bottom: 30px;
   color: white;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: .2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.scrollButton {
+    position: absolute;
+    bottom: 1em;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 1em;
+    transition: all 0.25s ease;
+    animation: example 1.5s ease infinite;
+}
+
+.scrollButton:hover {
+    width: 80vw;
+    bottom: 0;
+    border: 0;
+    border-radius: 4px 4px 0 0;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    content: 'View More!';
+    height: 5em;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    animation: 0;
+}
+
+@keyframes example {
+  0%   {margin-bottom: 0}
+  50%  {margin-bottom: 0.5em}
+  100%   {margin-bottom: 0}
 }
